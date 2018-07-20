@@ -6,8 +6,7 @@ parent: "Drill-on-YARN"
 
 Use the client tool to launch your new Drill cluster, as shown:  
 
-              $DRILL_HOME/bin/drill-on-yarn.sh site
-              $DRILL_SITE start
+              $DRILL_HOME/bin/drill-on-yarn.sh --site $DRILL_SITE start
 
 
 A number of lines describing the start-up process appear. The tool automatically archives
@@ -15,13 +14,11 @@ and uploads your site directory, which YARN copies (along with Drill) onto each 
 
 Check the status of your Drill cluster, as shown:  
 
-              $DRILL_HOME/bin/drill-on-yarn.sh site
-              $DRILL_SITE status  
+              $DRILL_HOME/bin/drill-on-yarn.sh --site $DRILL_SITE status  
 
 Stop your cluster, as shown:  
 
-              $DRILL_HOME/bin/drill-on-yarn.sh site
-              $DRILL_SITE stop
+              $DRILL_HOME/bin/drill-on-yarn.sh --site $DRILL_SITE stop
 
 
 Note, to avoid typing the site argument each time, you can set an environment variable, as shown:  
